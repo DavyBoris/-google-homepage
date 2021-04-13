@@ -1,0 +1,144 @@
+html, body{
+    margin: 0;
+    height: 100%;
+}
+#nav{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 15px;
+    cursor: pointer;
+    padding-top: 5px;
+}
+
+a{
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: underline;
+}
+#nav a{
+    margin-right: 20px;
+}
+#nav a.topimage{
+    width: 20px;
+    height: 20px;
+    background-color: red;
+    border-radius: 50px;
+}
+#middle{
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#logo{
+    text-align: center;
+}
+#searchbarcontainer{
+    margin-top: 20px;
+    text-align: center;
+    position: relative;
+
+}
+#searchbar{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    outline: 0;
+    width: 500px;
+    padding-right: 40px;
+    padding-left: 40px;
+    border-radius: 15px;
+    border: 1px solid #c4c4c4;
+}
+#search, #voice{
+    position: absolute;
+    top: 0;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#search{
+    left: 10px;
+}
+#voice{
+    right: 10px;
+}
+#searchbar:hover{
+    box-shadow: 0px 0px 10px 2px rgb(204, 204, 204);
+}
+#buttons{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+  
+}
+.button{
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 5px 10px;
+    cursor: pointer;
+    background-color: rgb(228, 228, 228);
+    border-radius: 3px;
+    border: 2px solid transparent   ;
+
+}
+#links{
+    margin-top: 20px;
+    text-align: center;
+}
+body{
+    display: flex;
+    flex-direction: column;
+}
+.button:hover{
+    box-shadow: 0 0 2px 1px black;
+}
+footer {
+    background-color: #f2f2f2;
+    flex-shrink: 0;
+    font-family: arial, sans-serif;
+    font-size: 15px;
+}
+
+#footer-top, #footer-bottom {
+    padding: 15px 30px;
+} 
+
+footer div {
+    color: #70757a;
+    padding: 0px 15px;
+}
+
+footer a {
+    color: #70757a;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+#footer-top {
+    border-bottom: 1px solid #dadce0;
+} 
+
+#footer-bottom {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#footer-bottom-left {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#footer-bottom-right {
+    display: flex;
+    flex-direction: row; 
+    justify-content: flex-end;
+}
